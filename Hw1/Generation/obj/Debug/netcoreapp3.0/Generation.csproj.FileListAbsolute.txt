@@ -1,0 +1,11 @@
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\Hw1\Generation\bin\Debug\netcoreapp3.0\Generation.exe
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\Hw1\Generation\bin\Debug\netcoreapp3.0\Generation.deps.json
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\Hw1\Generation\bin\Debug\netcoreapp3.0\Generation.runtimeconfig.json
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\Hw1\Generation\bin\Debug\netcoreapp3.0\Generation.runtimeconfig.dev.json
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\Hw1\Generation\bin\Debug\netcoreapp3.0\Generation.dll
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\Hw1\Generation\bin\Debug\netcoreapp3.0\Generation.pdb
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\Hw1\Generation\obj\Debug\netcoreapp3.0\Generation.csprojAssemblyReference.cache
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\Hw1\Generation\obj\Debug\netcoreapp3.0\Generation.AssemblyInfoInputs.cache
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\Hw1\Generation\obj\Debug\netcoreapp3.0\Generation.AssemblyInfo.cs
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\Hw1\Generation\obj\Debug\netcoreapp3.0\Generation.dll
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\Hw1\Generation\obj\Debug\netcoreapp3.0\Generation.pdb
