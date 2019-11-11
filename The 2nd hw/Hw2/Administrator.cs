@@ -8,12 +8,12 @@ namespace Hw2
 
         public virtual void CheckOut(int number) { }
 
-        protected virtual bool CheckTypeWithType(string type)
+        public virtual bool CheckTypeWithType(string type)
         {
             return true;
         }
 
-        protected virtual bool CheckTypeWithNumber(int number)
+        public virtual bool CheckTypeWithNumber(int number)
         {
             return true;
         }

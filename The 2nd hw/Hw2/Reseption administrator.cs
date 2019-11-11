@@ -6,13 +6,13 @@ namespace Hw2
 {
     public class ReseptionAdministrator: Administrator
     {
-        protected override bool CheckTypeWithType(string type)
+        public override bool CheckTypeWithType(string type)
         {
             base.CheckTypeWithType(type);
             return (type == "Lux" || type == "lux");
         }
 
-        protected override bool CheckTypeWithNumber(int number)
+        public override bool CheckTypeWithNumber(int number)
         {
             base.CheckTypeWithNumber(number);
             return number / 1000 == 3;
@@ -32,11 +32,12 @@ namespace Hw2
                     guest.Room = Hotel.Lux[i].Number;
                     Hotel.HotelGuests.Add(guest);
                     Hotel.Lux[i].IsOccupied = true;
+                    var cleaning = new Cleaning();
                     if (!Hotel.Lux[i].IsClean)
                     {
-                        //Clean 
+                        cleaning.Clean(Hotel.Lux[i].Number);
                     }
-                    //BringBaggage()
+                    cleaning.BringBaggage(Hotel.Lux[i].Number);
                     break;
                 }
 
@@ -71,7 +72,8 @@ namespace Hw2
                     Hotel.Rooms[i].IsOccupied = true;
                     if (!Hotel.Rooms[i].IsClean)
                     {
-                        //Clean 
+                        var cleaning = new Cleaning();
+                        cleaning.Clean(Hotel.Rooms[i].Number);
                     }
                     break;
                 }
@@ -81,7 +83,7 @@ namespace Hw2
                     Console.WriteLine("Your room is {0}", guest.Room);
                 }
                 else{
-                    Console.WriteLine("No rooms is found for this dates, we can search for another room type. " +
+                    Console.WriteLine("No rooms is found for today, we can search for another room type. " +
                                   "Write new room type or no, please");
                     var answer = Console.ReadLine();
                     if (answer != "no")
@@ -123,7 +125,6 @@ namespace Hw2
                         if (Hotel.Rooms[i].Number != room) continue;
                         Hotel.Rooms[i].IsClean = false;
                         Hotel.Rooms[i].IsOccupied = false;
-                        //Clean()
                     }
                 }
                 else
@@ -133,8 +134,8 @@ namespace Hw2
                         if (Hotel.Lux[i].Number != room) continue;
                         Hotel.Lux[i].IsClean = false;
                         Hotel.Lux[i].IsOccupied = false;  
-                        //Clean()
-                        //CarryBaggage()
+                        var cleaning = new Cleaning();
+                        cleaning.CarryBaggage(Hotel.Lux[i].Number);
                     }
                 }
                 Console.WriteLine("You moved out successfully");
