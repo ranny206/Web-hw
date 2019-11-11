@@ -1,0 +1,11 @@
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\The 2nd hw\Hw2\bin\Debug\netcoreapp3.0\Hw2.exe
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\The 2nd hw\Hw2\bin\Debug\netcoreapp3.0\Hw2.deps.json
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\The 2nd hw\Hw2\bin\Debug\netcoreapp3.0\Hw2.runtimeconfig.json
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\The 2nd hw\Hw2\bin\Debug\netcoreapp3.0\Hw2.runtimeconfig.dev.json
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\The 2nd hw\Hw2\bin\Debug\netcoreapp3.0\Hw2.dll
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\The 2nd hw\Hw2\bin\Debug\netcoreapp3.0\Hw2.pdb
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\The 2nd hw\Hw2\obj\Debug\netcoreapp3.0\Hw2.csprojAssemblyReference.cache
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\The 2nd hw\Hw2\obj\Debug\netcoreapp3.0\Hw2.AssemblyInfoInputs.cache
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\The 2nd hw\Hw2\obj\Debug\netcoreapp3.0\Hw2.AssemblyInfo.cs
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\The 2nd hw\Hw2\obj\Debug\netcoreapp3.0\Hw2.dll
+C:\Users\NUTA\RiderProjects\WEB the last easy hw\The 2nd hw\Hw2\obj\Debug\netcoreapp3.0\Hw2.pdb
