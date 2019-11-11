@@ -9,13 +9,13 @@ namespace Hw2
         protected override bool CheckTypeWithType(string type)
         {
             base.CheckTypeWithType(type);
-            return type == "Lux";
+            return (type == "Lux" || type == "lux");
         }
 
         protected override bool CheckTypeWithNumber(int number)
         {
             base.CheckTypeWithNumber(number);
-            return number % 1000 == 3;
+            return number / 1000 == 3;
         }
 
         public override void CheckIn(string name, string roomType)
