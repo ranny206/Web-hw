@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Mime;
 using System.Reflection;
 
 namespace Hw2
@@ -92,8 +93,13 @@ namespace Hw2
             ask:
                 Console.WriteLine("If you are hotel guest press H, if you are restaurant guest press R");
                 Console.WriteLine("If you are a senior administrator press F");
+                Console.WriteLine("If you want to stop working press S");
                 string ans = Console.ReadLine();
-            if (ans != "f" && ans != "F" &&
+            if (ans == "S" || ans == "s")
+            { 
+                Environment.Exit(0);
+            }
+            else if (ans != "f" && ans != "F" &&
                 ans != "r" && ans != "R" &&
                 ans != "h" && ans != "H")
             {
