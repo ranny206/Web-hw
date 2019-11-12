@@ -8,14 +8,14 @@ namespace Hw2
 
         public virtual void CheckOut(int number) { }
 
-        public virtual bool CheckTypeWithType(string type)
+        public virtual int CheckTypeWithType(string type)
         {
-            return true;
+            return 1;
         }
 
-        public virtual bool CheckTypeWithNumber(int number)
+        public virtual int CheckTypeWithNumber(int number)
         {
-            return true;
+            return 1;
         }
     }
 }

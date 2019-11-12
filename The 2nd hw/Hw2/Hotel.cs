@@ -6,23 +6,25 @@ namespace Hw2
 {
     public static class Hotel
     {
-        public static List<Room> Rooms = new List<Room>(10);
+        public static List<Room> Singles = new List<Room>(10);
+        public static List<Double> Doubles = new List<Double>(10);
         public static List<Lux> Lux = new List<Lux>(3);
         public static List<HotelGuest> HotelGuests = new List<HotelGuest>();
 
         static Hotel()
         {
             var roomNumber = 1001; 
-            for (var i = 0; i < 5; i++)
+            for (var i = 0; i < 10; i++)
             {
-                Rooms.Add(new Room(roomNumber,true, false, "Double"));
+                Singles.Add(new Room(roomNumber,true, false, "Single"));
                 roomNumber++;
             }
 
             roomNumber = 2001;
-            for (var i = 5; i < 10; i++)
+            for (var i = 0; i < 10; i++)
             {
-                Rooms.Add(new Room(roomNumber,true, false, "Single"));
+                Doubles.Add(new Double(roomNumber,true, false, "Double", 
+                    false));
                 roomNumber++;
             }
 

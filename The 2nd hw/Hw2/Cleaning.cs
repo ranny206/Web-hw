@@ -15,9 +15,17 @@ namespace Hw2
                     Console.WriteLine("Your room is clean and ready for your visit");
                 }
             }
-            else
+            else if(room / 1000 == 2)
             {
-                foreach (var t in Hotel.Rooms.Where(t => t.Number == room))
+                foreach (var t in Hotel.Doubles.Where(t => t.Number == room))
+                {
+                    t.IsClean = true;
+                    Console.WriteLine("Your room is clean and ready for your visit");
+                }
+            }
+            else if(room / 1000 == 1)
+            {
+                foreach (var t in Hotel.Singles.Where(t => t.Number == room))
                 {
                     t.IsClean = true;
                     Console.WriteLine("Your room is clean and ready for your visit");

@@ -82,8 +82,11 @@ namespace Hw2
                         Console.WriteLine("There is no room with this number");
                         goto case "3";
                     }
-                    var s = seniorAdministrator.ChooseRoomGuest(room);
-                    Console.WriteLine(s);
+                    list = seniorAdministrator.ChooseRoomGuest(room);
+                    foreach (var t in list)
+                    {
+                        Console.WriteLine(t);
+                    }
                     break;
             }
         }
@@ -91,7 +94,7 @@ namespace Hw2
         static void Main(string[] args)
         {
             ask:
-                Console.WriteLine("If you are hotel guest press H, if you are restaurant guest press R");
+                Console.WriteLine("If you are hotel guest press H");
                 Console.WriteLine("If you are a senior administrator press F");
                 Console.WriteLine("If you want to stop working press S");
                 string ans = Console.ReadLine();

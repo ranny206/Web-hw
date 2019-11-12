@@ -40,18 +40,24 @@ namespace Hw2
             return list;
         }
 
-        public string ChooseRoomGuest(int room)
+        public List<string> ChooseRoomGuest(int room)
         {
-            var result = "";
-            foreach (var t in Hotel.HotelGuests.Where(t => t.Room == room))
+            var list = new List<string>();
+            var index = 0;
+            for (int i = 0; i < Hotel.HotelGuests.Count; i++)
             {
-                result = t.Name;
+                if (Hotel.HotelGuests[i].Room == room)
+                {
+                    list.Insert(index, Hotel.HotelGuests[i].Name);
+                    index++;
+                }
             }
-            if (result == "")
+            if (list.Count == 0)
             {
-                result = "No guests in this room";
+                list.Insert(0, "No guests on this floor");
             }
-            return result;
+
+            return list;
         }
     }
 }
