@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_Error_Routing_Auth", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_files", "Task_files\Task_files.csproj", "{F24EE0EA-04EC-493F-AF4D-00E0B0362B30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_IMessage", "Task_IMessage\Task_IMessage.csproj", "{FCFE3B02-B279-4A73-BC44-8066D3F3C1E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App1", "App1\App1.csproj", "{47C3B42C-CD51-4EDE-A755-1DF2373A2B11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{F24EE0EA-04EC-493F-AF4D-00E0B0362B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F24EE0EA-04EC-493F-AF4D-00E0B0362B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F24EE0EA-04EC-493F-AF4D-00E0B0362B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCFE3B02-B279-4A73-BC44-8066D3F3C1E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCFE3B02-B279-4A73-BC44-8066D3F3C1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCFE3B02-B279-4A73-BC44-8066D3F3C1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCFE3B02-B279-4A73-BC44-8066D3F3C1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47C3B42C-CD51-4EDE-A755-1DF2373A2B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C3B42C-CD51-4EDE-A755-1DF2373A2B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C3B42C-CD51-4EDE-A755-1DF2373A2B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C3B42C-CD51-4EDE-A755-1DF2373A2B11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
