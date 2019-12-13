@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Hotel_App.Models.Room>
+<h2></h2>
+ 
+<form method="post" class="form-horizontal" role="form">
+    <p>To add new item fill all fields</p>
+    <div class="form-group">
+        <label for="Number" class="col-md-2 control-label">Number:</label>
+        <div class="col-md-4">
+            <input type="text" name="Number" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Floor" class="col-md-2 control-label">Floor:</label>
+        <div class="col-md-4">
+            <input type="text" name="Floor" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Type" class="col-md-2 control-label">Type:</label>
+        <div class="col-md-4">
+            <input type="text" name="RoomType" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Price" class="col-md-2 control-label">Price:</label>
+        <div class="col-md-4">
+            <input type="text" name="Price" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            @using (Html.BeginForm("AddNewRoom", null, FormMethod.Post))
+            {
+                <form action="~/Home/Index">
+                    <input type="submit" value="Add new room" />
+                </form>
+            }
+        </div>
+    </div>
+</form>

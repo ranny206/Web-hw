@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Hotel_App.Models.Guest>
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Hotel</title>
+    </head>
+</head>
+<body>
+<h3>Guests</h3>
+<form>
+    <span>
+        <input type="search" name="searchString" />
+        <input type="submit" value="Find" />
+    </span>
+</form>
+<table class="table-condensed" cellpadding="15" cellspacing="15">
+    <tr>
+        <td>Name</td>
+    </tr>
+    @foreach (var guest in Model)
+    {
+        <tr>
+            <td>@guest.Name</td>
+            <td><a href="~/Home/GuestInfo/@guest.Id">More</a></td>
+            <td><a href="~/Home/DeleteGuest/@guest.Id">Delete</a></td>
+            <td><a href="~/Home/EditGuest/@guest.Id">Change</a></td>
+        </tr>
+    }
+</table>
+@using (Html.BeginForm("AddNewGuest", null, FormMethod.Get))
+{
+    <form class="form-control" action="~/Home/Index1/AddNewGuest">
+        <input type="submit" value="Add new guest" />
+    </form>
+}
+</body>
+</html>

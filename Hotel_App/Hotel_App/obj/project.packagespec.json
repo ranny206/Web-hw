@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\NUTA\\RiderProjects\\Hotel_App\\Hotel_App\\Hotel_App.csproj",
+    "projectUniqueName": "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\Hotel_App\\Hotel_App\\Hotel_App.csproj",
     "projectName": "Hotel_App",
-    "projectPath": "C:\\Users\\NUTA\\RiderProjects\\Hotel_App\\Hotel_App\\Hotel_App.csproj",
-    "outputPath": "C:\\Users\\NUTA\\RiderProjects\\Hotel_App\\Hotel_App\\obj\\",
+    "projectPath": "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\Hotel_App\\Hotel_App\\Hotel_App.csproj",
+    "outputPath": "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\Hotel_App\\Hotel_App\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Microsoft\\Xamarin\\NuGet",

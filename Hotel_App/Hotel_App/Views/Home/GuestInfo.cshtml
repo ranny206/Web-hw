@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Hotel_App.Models.Guest>
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Info about guest</title>
+</head>
+<body>
+<h3>Info about guest</h3>
+<table  class="table-condensed" cellpadding="15" cellspacing="15">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Counrty</td>
+        <td>Room</td>
+    </tr>
+    <tr>
+        <td>@ViewBag.Guest.Id</td>
+        <td>@ViewBag.Guest.Name</td>
+        <td>@ViewBag.Guest.Age</td>
+        <td>@ViewBag.Guest.Country</td>
+        <td>@ViewBag.Guest.Room</td>
+    </tr>
+</table>
+<form action="~/Home/Index1">
+    <input type="submit" value="Go back"/>
+</form>
+
+</body>
+</html>

@@ -17,10 +17,9 @@ namespace Hotel_App
                         new Room
                         {
                             Number = room,
+                            Floor = 1,
                             RoomType = "Single",
-                            Price = "100$",
-                            IsClean = true,
-                            IsOccupied = false
+                            Price = "100$"
                         }
                     );
                     room++;
@@ -33,12 +32,12 @@ namespace Hotel_App
                         new Room
                         {
                             Number = room,
+                            Floor = 2,
                             RoomType = "Double",
-                            Price = "150$",
-                            IsClean = true,
-                            IsOccupied = false
+                            Price = "150$"
                         }
-                    );
+                    );room++;
+                    
                 }
 
                 room = 3001;
@@ -48,13 +47,41 @@ namespace Hotel_App
                         new Room
                         {
                             Number = room,
+                            Floor = 3,
                             RoomType = "Lux",
-                            Price = "500$",
-                            IsClean = true,
-                            IsOccupied = false
+                            Price = "500$"
                         }
                     );
+                    room++;
                 }
+            }
+
+            if (!context.Guests.Any())
+            {
+                context.Guests.Add(
+                    new Guest
+                    {
+                        Name = "Anna Rasputnaia",
+                        Age = 19,
+                        Country = "Russia",
+                        Room = 1001
+                    });
+                context.Guests.Add(
+                    new Guest
+                    {
+                        Name = "Daria Ribka",
+                        Age = 19,
+                        Country = "Russia",
+                        Room = 1002
+                    });
+                context.Guests.Add(
+                    new Guest
+                    {
+                        Name = "James McAvoy",
+                        Age = 40,
+                        Country = "scotland",
+                        Room = 3002
+                    });
             }
             context.SaveChanges();
         }

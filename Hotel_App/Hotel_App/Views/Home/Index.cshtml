@@ -1,34 +1,40 @@
 ﻿@model IEnumerable<Hotel_App.Models.Room>
-@{
-    Layout = null;
-}
 <!DOCTYPE html>
  
 <html>
 <head>
-    <title>Hotel</title>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Hotel</title>
+    </head>
 </head>
 <body>
 <h3>Rooms</h3>
-<table>
+ <form>
+     <span>
+         <input type="search" name="searchString" />
+         <input type="submit" value="Find" />
+     </span>
+ </form>
+<table class="table-condensed" cellpadding="15" cellspacing="15">
     <tr>
         <td>Number</td>
-        <td>Type</td>
-        <td>Price</td>
-        <td>Cleanliness</td>
-        <td>Occupation</td>
     </tr>
     @foreach (var room in Model)
     {
         <tr>
             <td>@room.Number</td>
-            <td>@room.RoomType</td>
-            <td>@room.Price</td>
-            <td>@room.IsClean</td>
-            <td>@room.IsOccupied</td>
-            <!--<td><a href="~/Home/Buy/>Купить</a></td>-->
+            <td><a href="~/Home/RoomInfo/@room.Id">More</a></td>
+            <td><a href="~/Home/DeleteRoom/@room.Id">Delete</a></td>
+            <td><a href="~/Home/EditRoom/@room.Id">Change</a></td>
         </tr>
     }
 </table>
+@using (Html.BeginForm("AddNewRoom", null, FormMethod.Get))
+{
+    <form class="form-control" action="~/Home/Index/AddNewRoom">
+        <input type="submit" value="Add new room" />
+    </form>
+}
 </body>
 </html>

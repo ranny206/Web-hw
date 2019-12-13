@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NUTA\\RiderProjects\\Hotel_App\\Hotel_App\\Hotel_App.csproj": {}
+    "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\Hotel_App\\Hotel_App\\Hotel_App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NUTA\\RiderProjects\\Hotel_App\\Hotel_App\\Hotel_App.csproj": {
+    "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\Hotel_App\\Hotel_App\\Hotel_App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NUTA\\RiderProjects\\Hotel_App\\Hotel_App\\Hotel_App.csproj",
+        "projectUniqueName": "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\Hotel_App\\Hotel_App\\Hotel_App.csproj",
         "projectName": "Hotel_App",
-        "projectPath": "C:\\Users\\NUTA\\RiderProjects\\Hotel_App\\Hotel_App\\Hotel_App.csproj",
+        "projectPath": "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\Hotel_App\\Hotel_App\\Hotel_App.csproj",
         "packagesPath": "C:\\Users\\NUTA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NUTA\\RiderProjects\\Hotel_App\\Hotel_App\\obj\\",
+        "outputPath": "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\Hotel_App\\Hotel_App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet",

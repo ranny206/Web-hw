@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Hotel_App.Models.Room>
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+<h3>Are sure that you want to delete the room number @ViewBag.Room.Number</h3>
+@using (Html.BeginForm("DeleteRoom", null, FormMethod.Post))
+{
+    <form action="~/Home/Index">
+        <input type="submit" value="Delete"/>
+    </form>
+}
+<div>
+    <form action="~/Home/Index">
+        <input type="submit" value="Go back"/>
+    </form>
+</div>
+</body>
+</html>
