@@ -1,0 +1,106 @@
+﻿@using FilterSortPagingApp.Models
+@model IndexViewModel
+ 
+@{
+    ViewData["Title"] = "Home Page";
+}
+    <style>
+        @@font-face {
+            font-family: 'FontAwesome';
+            src: url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'), 
+            url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff') format('woff'), 
+            url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts/fontawesome-webfont.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal
+        }
+        .glyphicon {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+        .glyphicon-chevron-right:before {
+            content: "\f054";
+        }
+        .glyphicon-chevron-left:before {
+            content: "\f053";
+        }
+    </style>
+<h1>Guest list</h1>
+<form method="get">
+    <div class="form-inline">
+        <label>Name: </label>
+        <input name="name" value="@Model.FilterViewModel.SelectedName" class="form-control" />
+         
+        <!--<label>Room: </label>
+        <select name="room" asp-items="Model.FilterViewModel.Rooms" class="form-control"></select>-->
+ 
+        <input type="submit" value="Filter" class="btn btn-outline-dark" />
+    </div>
+</form>
+ 
+<table class="table">
+    <tr>
+        <th>
+            <a asp-action="Index"
+               asp-route-sortOrder="@(Model.SortViewModel.NameSort)"
+               asp-route-name="@(Model.FilterViewModel.SelectedName)"
+               asp-route-company="@(Model.FilterViewModel.SelectedRoom)">Name</a>
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sortOrder="@(Model.SortViewModel.AgeSort)"
+               asp-route-name="@(Model.FilterViewModel.SelectedName)"
+               asp-route-company="@(Model.FilterViewModel.SelectedRoom)">Age</a>
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sortOrder="@(Model.SortViewModel.RoomSort)"
+               asp-route-name="@(Model.FilterViewModel.SelectedName)"
+               asp-route-company="@(Model.FilterViewModel.SelectedRoom)">Room</a>
+        </th>
+        <th>
+            <a>Life time</a>
+        </th>
+    </tr>
+    @foreach (Guest u in Model.Users)
+    {
+        <tr>
+            <td>@u.Name</td>
+            <td>@u.Age</td>
+            <td>@u.Room.Number</td>
+            <td>"@($"{u.LifeTime.Days} days, {u.LifeTime.Hours} hours, " +
+                   $"{u.LifeTime.Minutes} minutes, {u.LifeTime.Seconds} seconds");</td>
+        </tr>
+    }
+</table>
+@if (Model.PageViewModel.HasPreviousPage)
+{
+    <a asp-action="Index"
+       asp-route-page="@(Model.PageViewModel.PageNumber - 1)"
+       asp-route-name="@(Model.FilterViewModel.SelectedName)"
+       asp-route-company="@(Model.FilterViewModel.SelectedRoom)"
+       asp-route-sortorder="@(Model.SortViewModel.Current)"
+       class="btn  btn-outline-dark">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Back
+    </a>
+}
+@if (Model.PageViewModel.HasNextPage)
+{
+    <a asp-action="Index"
+       asp-route-page="@(Model.PageViewModel.PageNumber + 1)"
+       asp-route-name="@(Model.FilterViewModel.SelectedName)"
+       asp-route-company="@(Model.FilterViewModel.SelectedRoom)"
+       asp-route-sortorder="@(Model.SortViewModel.Current)"
+       class="btn btn-outline-dark">
+        Next
+        <i class="glyphicon glyphicon-chevron-right"></i>
+    </a>
+}
+@using (Html.BeginForm("AddNew", null, FormMethod.Get))
+{
+    <form class="form-control" action="~/Home/Index/AddNewGuest">
+        <input type="submit" value="Add new item" />
+    </form>
+}
