@@ -1,0 +1,28 @@
+﻿@model object
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body>
+    <!--меню-->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div>
+                <ul class="nav list-group-horizontal">
+                    <li><a href="~/Home" class="navbar-brand"><h1>Hotel</h1></a></li>
+                    <li><a href="~/Home/Eager" class="navbar-brand">Eager</a></li>
+                    <li><a href="~/Home/Explicit" class="navbar-brand">Explicit</a></li>
+                    <li><a href="~/Home/Lazy" class="navbar-brand">Lazy</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
