@@ -19,11 +19,11 @@ namespace FilterSortPagingApp.Controllers
             //context.Database.EnsureDeleted();
             if (!db.Rooms.Any())
             {
-                Room room1 = new Room { Number = 1001};
-                Room room2 = new Room { Number = 1002};
-                Room room3 = new Room { Number = 1003};
-                Room room4 = new Room { Number = 1004};
-                Room room5 = new Room { Number = 1005};
+                Room room1 = new Room { Number = "1001"};
+                Room room2 = new Room { Number = "1002"};
+                Room room3 = new Room { Number = "1003"};
+                Room room4 = new Room { Number = "1004"};
+                Room room5 = new Room { Number = "1005"};
 
                 Guest guest1 = new Guest { Name = "Anna", Age = 19, Country = "Russia", Room = room1, 
                     CreationDate = DateTime.Now};
@@ -53,7 +53,7 @@ namespace FilterSortPagingApp.Controllers
 
             }
         }
-        public async Task<IActionResult> Index(int? company, string name, int page = 1, 
+        public async Task<IActionResult> Index(int? room, string name, int page = 1, 
             SortState sortOrder = SortState.NameAsc)
         {
             int pageSize = 4;
@@ -61,9 +61,9 @@ namespace FilterSortPagingApp.Controllers
             //фильтрация
             IQueryable<Guest> users = db.Users.Include(x=>x.Room);
  
-            if (company != null && company != 1)
+            if (room != null && room != 0)
             {
-                users = users.Where(p => p.RoomId == company);
+                users = users.Where(p => p.RoomId == room);
             }
             if (!String.IsNullOrEmpty(name))
             {
@@ -102,7 +102,7 @@ namespace FilterSortPagingApp.Controllers
             {
                 PageViewModel = new PageViewModel(count, page, pageSize),
                 SortViewModel = new SortViewModel(sortOrder),
-                FilterViewModel = new FilterViewModel(db.Rooms.ToList(), company, name),
+                FilterViewModel = new FilterViewModel(db.Rooms.ToList(), room, name),
                 Users = items
             };
             return View(viewModel);
@@ -115,7 +115,7 @@ namespace FilterSortPagingApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddNew(string name, int age, string country, int room)
+        public IActionResult AddNew(string name, int age, string country, string room)
         {
             var room1 = new Room
             {

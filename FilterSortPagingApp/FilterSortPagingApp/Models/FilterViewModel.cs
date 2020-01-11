@@ -7,8 +7,8 @@ namespace FilterSortPagingApp.Models
     {
         public FilterViewModel(List<Room> rooms, int? room, string name)
         {
-            rooms.Insert(0, new Room { Number = -1, Id = 0 });
-            Rooms = new SelectList(rooms, "Id", "Name", room);
+            rooms.Insert(0, new Room { Number = "All", Id = 0 });
+            Rooms = new SelectList(rooms, "Id", "Number", room);
             SelectedRoom = room;
             SelectedName = name;
         }

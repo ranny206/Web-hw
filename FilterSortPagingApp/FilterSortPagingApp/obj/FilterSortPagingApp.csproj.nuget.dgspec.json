@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NUTA\\RiderProjects\\FilterSortPagingApp\\FilterSortPagingApp\\FilterSortPagingApp.csproj": {}
+    "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\FilterSortPagingApp\\FilterSortPagingApp\\FilterSortPagingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NUTA\\RiderProjects\\FilterSortPagingApp\\FilterSortPagingApp\\FilterSortPagingApp.csproj": {
+    "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\FilterSortPagingApp\\FilterSortPagingApp\\FilterSortPagingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NUTA\\RiderProjects\\FilterSortPagingApp\\FilterSortPagingApp\\FilterSortPagingApp.csproj",
+        "projectUniqueName": "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\FilterSortPagingApp\\FilterSortPagingApp\\FilterSortPagingApp.csproj",
         "projectName": "FilterSortPagingApp",
-        "projectPath": "C:\\Users\\NUTA\\RiderProjects\\FilterSortPagingApp\\FilterSortPagingApp\\FilterSortPagingApp.csproj",
+        "projectPath": "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\FilterSortPagingApp\\FilterSortPagingApp\\FilterSortPagingApp.csproj",
         "packagesPath": "C:\\Users\\NUTA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NUTA\\RiderProjects\\FilterSortPagingApp\\FilterSortPagingApp\\obj\\",
+        "outputPath": "C:\\Users\\NUTA\\RiderProjects\\WEB the last easy hw\\FilterSortPagingApp\\FilterSortPagingApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet",

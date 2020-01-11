@@ -1,7 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff3f512e-6f61-40c3-b853-d11e6894765c" name="Default Changelist" comment="" />
+    <list default="true" id="ff3f512e-6f61-40c3-b853-d11e6894765c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FilterSortPagingApp/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FilterSortPagingApp/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FilterSortPagingApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FilterSortPagingApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/Models/FilterViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/Models/FilterViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/Models/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/Models/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/bin/Debug/netcoreapp3.1/FilterSortPagingApp.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/bin/Debug/netcoreapp3.1/FilterSortPagingApp.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/bin/Debug/netcoreapp3.1/FilterSortPagingApp.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/bin/Debug/netcoreapp3.1/FilterSortPagingApp.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/bin/Debug/netcoreapp3.1/FilterSortPagingApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/bin/Debug/netcoreapp3.1/FilterSortPagingApp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/bin/Debug/netcoreapp3.1/FilterSortPagingApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/bin/Debug/netcoreapp3.1/FilterSortPagingApp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/FilterSortPagingApp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/Home/AddNew.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/Home/AddNew.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/FilterSortPagingApp.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/FilterSortPagingApp.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/FilterSortPagingApp.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/FilterSortPagingApp.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FilterSortPagingApp/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FilterSortPagingApp/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_App/Hotel_App/Views/Home/EditGuest.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_App/Hotel_App/Views/Home/EditGuest.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_App/Hotel_App/Views/Home/EditRoom.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_App/Hotel_App/Views/Home/EditRoom.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_App/Hotel_App/bin/Debug/netcoreapp3.0/Hotel_App.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_App/Hotel_App/bin/Debug/netcoreapp3.0/Hotel_App.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_App/Hotel_App/bin/Debug/netcoreapp3.0/Hotel_App.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_App/Hotel_App/bin/Debug/netcoreapp3.0/Hotel_App.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_App/Hotel_App/obj/Debug/netcoreapp3.0/Hotel_App.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_App/Hotel_App/obj/Debug/netcoreapp3.0/Hotel_App.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_App/Hotel_App/obj/Debug/netcoreapp3.0/Hotel_App.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_App/Hotel_App/obj/Debug/netcoreapp3.0/Hotel_App.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_App/Hotel_App/obj/Debug/netcoreapp3.0/Razor/Views/Home/EditGuest.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_App/Hotel_App/obj/Debug/netcoreapp3.0/Razor/Views/Home/EditGuest.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hotel_App/Hotel_App/obj/Debug/netcoreapp3.0/Razor/Views/Home/EditRoom.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Hotel_App/Hotel_App/obj/Debug/netcoreapp3.0/Razor/Views/Home/EditRoom.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/App1/obj/Debug/netcoreapp3.0/App1.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/App1/obj/Debug/netcoreapp3.0/App1.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/Task1/obj/Debug/netcoreapp3.0/Task1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/Task1/obj/Debug/netcoreapp3.0/Task1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/Task1/obj/Debug/netcoreapp3.0/Task1.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/Task1/obj/Debug/netcoreapp3.0/Task1.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/Task_IMessage/obj/Debug/netcoreapp3.0/Task_IMessage.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/Task_IMessage/obj/Debug/netcoreapp3.0/Task_IMessage.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/Task_files/obj/Debug/netcoreapp3.0/Task_files.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/Task_files/obj/Debug/netcoreapp3.0/Task_files.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hw3/Task_files/obj/Debug/netcoreapp3.0/Task_files.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../hw3/Task_files/obj/Debug/netcoreapp3.0/Task_files.csprojAssemblyReference.cache" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,41 +66,49 @@
     <expand />
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="FilterSortPagingApp" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/IndexViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/PageViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/SortViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/SortState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Views/Home/AddNew.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/Room.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/PageViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/MyDatabase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/IndexViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/Guest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/FilterViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/ErrorViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/MyDatabase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/Guest.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Models/Room.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Views/Home/AddNew.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/320AE9F5-4778-4C83-B457-9738AA85B248/2b/785959d9/RazorPage`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FilterSortPagingApp/Startup.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FilterSortPagingApp/Models/Room.cs" />
         <option value="$PROJECT_DIR$/FilterSortPagingApp/Startup.cs" />
         <option value="$PROJECT_DIR$/FilterSortPagingApp/Models/PageViewModel.cs" />
         <option value="$PROJECT_DIR$/FilterSortPagingApp/Models/IndexViewModel.cs" />
-        <option value="$PROJECT_DIR$/FilterSortPagingApp/Models/FilterViewModel.cs" />
-        <option value="$PROJECT_DIR$/FilterSortPagingApp/Models/MyDatabase.cs" />
         <option value="$PROJECT_DIR$/FilterSortPagingApp/Models/SortState.cs" />
         <option value="$PROJECT_DIR$/FilterSortPagingApp/Models/SortViewModel.cs" />
         <option value="$PROJECT_DIR$/FilterSortPagingApp/Views/Home/AddNew.cs" />
         <option value="$PROJECT_DIR$/FilterSortPagingApp/Models/Guest.cs" />
         <option value="$PROJECT_DIR$/FilterSortPagingApp/Views/Home/AddNew.cshtml" />
+        <option value="$PROJECT_DIR$/FilterSortPagingApp/Models/MyDatabase.cs" />
         <option value="$PROJECT_DIR$/FilterSortPagingApp/Views/Home/Index.cshtml" />
+        <option value="$PROJECT_DIR$/FilterSortPagingApp/Models/Room.cs" />
         <option value="$PROJECT_DIR$/FilterSortPagingApp/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/FilterSortPagingApp/Models/FilterViewModel.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1WBrMhg0B4swLcExkIkdR8oJXI9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
@@ -118,14 +170,32 @@
       <option name="presentableId" value="Default" />
       <updated>1578633782760</updated>
       <workItem from="1578633784463" duration="13012000" />
+      <workItem from="1578654444398" duration="4802000" />
+      <workItem from="1578700000104" duration="520000" />
+      <workItem from="1578708377595" duration="111000" />
+      <workItem from="1578710246272" duration="45000" />
+      <workItem from="1578712381013" duration="2916000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>
@@ -136,6 +206,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/FilterSortPagingApp/Controllers/HomeController.cs</url>
+          <line>107</line>
+          <properties documentPath="$PROJECT_DIR$/FilterSortPagingApp/Controllers/HomeController.cs" initialLine="107">
+            <startOffsets>
+              <option value="4636" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4659" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
