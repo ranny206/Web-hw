@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Guests list</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>Guests list</h2>
+    <form name="guestForm">
+        <input type="hidden" name="id" value="0" />
+        <div class="form-group col-md-5">
+            <label for="name">Name:</label>
+            <input class="form-control" name="name" />
+        </div>
+        <div class="form-group col-md-5">
+            <label for="age">Age:</label>
+            <input class="form-control" name="age" type="number" />
+        </div>
+        <div class="panel-body">
+            <button type="submit" id="submit" class="btn btn-primary">Save</button>
+            <a id="reset" class="btn btn-primary">Cancel</a>
+        </div>
+    </form>
+    <table class="table table-condensed table-striped  col-md-6">
+        <thead><tr><th>Id</th><th>Name</th><th>Age</th><th></th></tr></thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div>2020 © Ranny206</div>
+    <script>
+        // Получение всех пользователей
+        async function GetGuests() {
+            // отправляет запрос и получаем ответ
+            const response = await fetch("/api/guests", {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            // если запрос прошел нормально
+            if (response.ok === true) {
+                // получаем данные
+                const guests = await response.json();
+                let rows = document.querySelector("tbody"); 
+                guests.forEach(guest => {
+                    // добавляем полученные элементы в таблицу
+                    rows.append(row(guest));
+                });
+            }
+        }
+        // Получение одного пользователя
+        async function GetGuest(id) {
+            const response = await fetch("/api/guests/" + id, {
+                method: "GET",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const guest = await response.json();
+                const form = document.forms["guestForm"];
+                form.elements["id"].value = guest.id;
+                form.elements["name"].value = guest.name;
+                form.elements["age"].value = guest.age;
+            }
+        }
+        // Добавление пользователя
+        async function CreateGuest(guestName, guestAge) {
+ 
+            const response = await fetch("api/guests", {
+                method: "POST",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    name: guestName,
+                    age: parseInt(guestAge, 10)
+                })
+            });
+            if (response.ok === true) {
+                const guest = await response.json();
+                reset();
+                document.querySelector("tbody").append(row(guest));
+            }
+        }
+        // Изменение пользователя
+        async function EditGuest (guestId, guestName, guestAge) {
+            const response = await fetch("api/guests", {
+                method: "PUT",
+                headers: { "Accept": "application/json", "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    id: parseInt(guestId, 10),
+                    name: guestName,
+                    age: parseInt(guestAge, 10)
+                })
+            });
+            if (response.ok === true) {
+                const guest = await response.json();
+                reset();
+                document.querySelector("tr[data-rowid='" + guest.id + "']").replaceWith(row(guest));
+            }
+        }
+        // Удаление пользователя
+        async function DeleteGuest(id) {
+            const response = await fetch("/api/guests/" + id, {
+                method: "DELETE",
+                headers: { "Accept": "application/json" }
+            });
+            if (response.ok === true) {
+                const guest = await response.json();
+                document.querySelector("tr[data-rowid='" + guest.id + "']").remove();
+            }
+        }
+ 
+        // сброс формы
+        function reset() {
+            const form = document.forms["guestForm"];
+            form.reset();
+            form.elements["id"].value = 0;
+        }
+        // создание строки для таблицы
+        function row(guest) {
+ 
+            const tr = document.createElement("tr");
+            tr.setAttribute("data-rowid", guest.id);
+ 
+            const idTd = document.createElement("td");
+            idTd.append(guest.id);
+            tr.append(idTd);
+ 
+            const nameTd = document.createElement("td");
+            nameTd.append(guest.name);
+            tr.append(nameTd);
+ 
+            const ageTd = document.createElement("td");
+            ageTd.append(guest.age);
+            tr.append(ageTd);
+             
+            const linksTd = document.createElement("td");
+ 
+            const editLink = document.createElement("a");
+            editLink.setAttribute("data-id", guest.id);
+            editLink.setAttribute("style", "cursor:pointer;padding:15px;");
+            editLink.append("Change");
+            editLink.addEventListener("click", e => {
+ 
+                e.preventDefault();
+                GetGuest(guest.id);
+            });
+            linksTd.append(editLink);
+ 
+            const removeLink = document.createElement("a");
+            removeLink.setAttribute("data-id", guest.id);
+            removeLink.setAttribute("style", "cursor:pointer;padding:15px;");
+            removeLink.append("Delete");
+            removeLink.addEventListener("click", e => {
+ 
+                e.preventDefault();
+                DeleteGuest(guest.id);
+            });
+ 
+            linksTd.append(removeLink);
+            tr.appendChild(linksTd);
+ 
+            return tr;
+        }
+        // сброс значений формы
+        document.getElementById("reset").click(function (e) {
+ 
+            e.preventDefault();
+            reset();
+        })
+ 
+        // отправка формы
+        document.forms["guestForm"].addEventListener("submit", e => {
+            e.preventDefault();
+            const form = document.forms["guestForm"];
+            const id = form.elements["id"].value;
+            const name = form.elements["name"].value;
+            const age = form.elements["age"].value;
+            if (id == 0)
+                CreateGuest(name, age);
+            else
+                EditGuest(id, name, age);
+        });
+ 
+        // загрузка пользователей
+        GetGuests();
+ 
+    </script>
+</body>
+</html>
